@@ -35,7 +35,7 @@ class TestYandexDiskAPI(unittest.TestCase):
         self.assertEqual(response.status_code, 409)
 
     def test_empty_folder_name(self):
-        response = requests.get(f'{ya_base_url}/', headers=self.headers)
+        response = requests.put(f'{ya_base_url}/', headers=self.headers)
         self.assertEqual(response.status_code, 404)
 
     def create_folder(self):
