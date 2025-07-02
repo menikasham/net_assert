@@ -47,7 +47,7 @@ def test_create_empty_shelves():
     assert len(shelves.get_all_notes()) == 0
 
 
-def test_create_dir(create_shelves):
+def test_create_docs(create_shelves):
     shelves = create_shelves
     assert len(shelves.get_all_notes()) == 4
 
